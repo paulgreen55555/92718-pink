@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: pink</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+  	<div class="mobile-menu">
+  		<div class="mobile-menu__header">pink</div>
+  		<div class="mobile-menu__btn-close"></div>
+  		<ul class="mobile-menu__items-list">
+			<li class="mobile-menu__item">информация</li>
+			<li class="mobile-menu__item">блог</li>
+			<li class="mobile-menu__item">отзывы</li>
+			<li class="mobile-menu__item">конкурс</li>
+  		</ul>
+  	</div>
+  	<div class="top-menu">
+  		<div class="top-menu__header"></div>
+  		<div class="top-menu__btn-open-menu"></div>
+  	</div>
+  	<div class="intro">
+		<div class="intro__text">Конкурс на самое безбашеное путешествие с Пинк</div>
+	</div>
+	<div class="form">
+		<div class="form__head">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</div>
+	</div>
+	<div class="block-name">
+		<input type="text" id="first-name" placeholder="Введите ваше имя" required>
+		<label for="first-name">Имя: *</label>
+		<input type="text" id="last-name" placeholder="Укажите фамилию" required>
+		<label for="last-name">Фамилия: *</label>
+		<input type="text" id="middle-name" placeholder="Ну и отчество тоже">
+		<label for="middle-name">Отчество:</label>
+	</div>
+    <div class="block-application">
+    	<label>с каким приложение путешествовали? *</label>
+    	<input type="radio" id="application-ios" name="application" value="ios">
+    	<label for="application-ios">Pink для iOS</label>
+    	<input type="radio" id="application-android" name="application" value="android">
+    	<label for="application-android">Pink на Аndroid</label>
+    	<input type="radio" id="application-windows" name="application" value="windows">
+    	<label for="application-windows">Windows Phone</label>
+    </div>
+    <div class="block-data">
+    	<label>когда вы путешествовали? *</label>
+    	<input type="data" id="data-in">
+    	<label for="data-in">Дата вьезда</label>
+    	<input type="range" id="data-range">
+    	<label for="data-range">Продолжительность</label>
+    	<input type="data" id="data-out" disabled>
+    	<label for="data-out">Дата возвращения</label>
+    </div>
+    <div class="block-companions">
+    	<input type="range" id="companions-range">
+    	<label for="companions-range">Количество попутчиков *</label>
+    	<input type="text" id="companions-number" disabled>
+    	<label for="companions-number">№</label>
+		<input type="text" id="companions-first-name" placeholder="Введите ваше имя" required>
+		<label for="companions-first-name">Имя: *</label>
+		<input type="text" id="companions-nickname" placeholder="Ну как же без этого!">
+		<label for="companions-nickname">Прозвище:</label>
+    	
+    </div>
+	<div class="block-achievements">
+		<label>Ваши безбашенные достижения в путешествии</label>
+		<input type="checkbox" id="shark">
+		<label for="shark">Сделал селфи с акулой</label>
+		<input type="checkbox" id="sun">
+		<label for="sun">Обгорел на пляже</label>
+		<input type="checkbox" id="norris">
+		<label for="norris">Видел Чака Норриса</label>
+		<input type="checkbox" id="buy">
+		<label for="buy">Накупил сувениров</label>
+		<input type="checkbox" id="tower">
+		<label for="tower">Удержал башню</label>
+		<input type="checkbox" id="hotel">
+		<label for="hotel">Разгромил отель</label>
+	</div>
+	<div class="block-photos">
+		<label>Ваши фотографии из поездки *</label>
+		<input type="file" text="ЗАГРУЗИТЬ ФОТО">
+		<div class="gallery">
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+			<div class="gallery__photo">
+				<img src="" alt="photo">
+				<div class="btn-close"></div>
+			</div>
+		</div>
+	</div>
+	<div class="block-submit">
+		<input type="submit" text="ОТПРАВИТЬ ФОРМУ">
+		<span><label>*</label>- обязательные поля</span>
+	</div>
+	<div class="block-footer">
+		<div class="block-footer__logo"></div>
+		<div class="block-footer__social">
+			<div class="social_item--twitter"></div>
+			<div class="social_item--facebook"></div>
+			<div class="social_item--google-play"></div>
+		</div>
+		<div class="block-footer__stamp"></div>
+	</div>
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
