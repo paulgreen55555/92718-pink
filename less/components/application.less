@@ -1,0 +1,67 @@
+.application {
+
+	background-color: #1D2631;
+	padding: 30px 0 35px 0; 
+
+	&__btn-download {
+		border-radius: 40px;
+		border: 3px solid white;
+		height: 50px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 50px;
+		text-align: center;
+		margin: 0 6.25%;
+		font-family: 'Open Sans' sans-serif;
+		cursor: pointer;
+		
+		&:hover{
+			color: #D22856;
+			background-color: #fff;
+		}
+		&:active {
+			color: #F1BECC;
+		}
+
+
+	}
+
+	&__logos {
+		width: 100%;
+		padding: 30px 17.2%;
+	}
+
+	&__item {
+		width: 18.75%;
+		height: 60px;
+		float: left;
+		margin-right: 6.25%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	&__item:last-child {
+		margin-right: 0px;
+	}
+
+	.apple {
+		background-image: url(img/apple.png);
+	}
+
+	.android {
+		background-image: url(img/android.png);
+	}
+
+	.windows {
+		background-image: url(img/windows.png);
+	}
+	
+	&__footer-text{
+		color: #989892;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		font-family: 'Tahoma' sans-serif;	
+		margin:0 14.1%;
+	}
+}
