@@ -20,6 +20,16 @@ form {
 		font-size: 18px;
 	}
 
+	input + label {
+		display: inline-block;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	input[type="radio"]{
+		display: none;
+	}
+
 	.head {
 		padding: 55px 20px 0 20px;
 		font-size: 14px;
@@ -28,21 +38,18 @@ form {
 		margin-bottom: 30px;
 	}
 	
-
 	.block-name {
 		padding:  20px;
 
 		label {
-
 			margin-bottom: 15px;
 		}
 	
 	}
 
 	.block-application {
-		padding: 40px 20px;
+		padding: 40px 0 5px 20px;
 		background-color: #f2f2f2;
-
 
 		&__head {
 			text-align: center;
@@ -53,6 +60,26 @@ form {
 			text-transform: none;
 			color: #283645;
 		}
+		
+		label:after {
+			position: absolute;
+			top: -10px;
+			left: -65px;
+			content: url(img/radio-no.png)
+		}
+
+		input:checked + label:after {
+		 	content: url(img/radio-yes.png)
+		}
+
+		&__check {
+			margin:0 0 60px 60px;
+
+			label {
+				color: #283645;
+				text-transform: none;
+			}
+		}
 	}
 
 	.block-data {
@@ -61,10 +88,6 @@ form {
 		
 		&__head {
 			margin-bottom: 45px; 
-		}
-
-		label {
-			margin-bottom: 25px;
 		}
 
 	}
@@ -77,15 +100,115 @@ form {
 			width: 20px;
 			min-width: 0;
 			float: left;
-			border-right: none;
+			position: absolute;
+
 		}
 
+		.number-label {
+			float: left;
+			margin-right: 45px;
+		}
+
+
 		.name {
-			width: 0;
+			margin-left: 60px;
 		}
 
 		label {
 			margin-bottom: 15px;
+		}
+	}
+
+	.block-achievements{
+		padding-top: 55px;
+
+		&__head {
+			text-align: center;
+			margin-bottom: 40px; 
+
+		}
+
+		label:after {
+			position: absolute;
+			top: -10px;
+			left: -65px;
+			content: url(img/checkbox-no.png)
+		}
+
+		input:checked + label:after {
+		 	content: url(img/checkbox-yes.png)
+		}
+
+		&__check {
+			margin:0 0 65px 80px;
+			
+
+			label {
+				color: #283645;
+				text-transform: none;
+			}
+		}
+	}
+
+	.block-photos {
+		padding: 40px 20px;
+		background-color: #f2f2f2;
+
+		label {
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		&__add-photo-btn {
+			width: 87.5%;
+			margin-bottom: 30px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px 0;
+			border-color: #e6e6e6;
+			outline: none;
+			border-radius: 5px;
+			background-color: #FFF;
+		}
+
+		&__gallery {
+			border-top: 2px solid #e5e5e5;
+		}
+	}
+
+
+	.block-submit {
+		padding: 50px 20px;
+
+		input {
+			padding: 20px 0;
+			width: 87.5%;
+			color: white;
+			background-color: #2AAB6D;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 5px;
+			border: none;
+			text-transform: uppercase;
+			margin-bottom: 45px;
+
+		}
+		
+		&__req-info {
+			margin: 0 15%;
+		}
+
+		&--red-star {
+			float: left;
+			color: #d22856;
+			width: 15px;
+		}
+
+		&--req-text {
+			text-transform: uppercase;
+			font-size: 14px;
 		}
 	}
 }
