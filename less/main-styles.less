@@ -4,18 +4,30 @@
 }
 
 body {
-	min-width: 320px;
+	
+	font-family: 'Open Sans' sans-serif;
 }
 
 .main-wrapper {
 	min-width: 320px;
-	max-width: 660px;
+}
+
+@media(min-width: 660px){
+	.main-wrapper {
+		max-width: 660px;
+	}
+}
+
+@media(min-width: 960px){
+	.main-wrapper {
+		max-width: 960px;
+	}
 }
 
 .slider{
 
 	&-slides {
-		width: 300%;
+		
 	}
 
 	&-inner {

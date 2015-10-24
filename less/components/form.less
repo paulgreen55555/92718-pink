@@ -18,6 +18,15 @@ form {
 		border: 2px solid #e5e5e5;
 		border-radius: 2px;
 		font-size: 18px;
+		outline: #d22856;
+
+		&:hover {
+			border-color: #283645;
+		}
+
+		&:active {
+			border-color: #d22856;
+		}
 	}
 
 	input + label {
@@ -67,10 +76,28 @@ form {
 			left: -65px;
 			content: url(img/radio-no.png)
 		}
+		
+		label:hover:after {
+			content: url(img/radio-no-hov.png)
+		}
+
+		label:active:after {
+			content: url(img/radio-no-act.png)
+		}
 
 		input:checked + label:after {
 		 	content: url(img/radio-yes.png)
 		}
+
+		input:checked + label:hover:after {
+		 	content: url(img/radio-yes-hov.png)
+		}
+
+		input:checked + label:active:after {
+		 	content: url(img/radio-yes-act.png)
+		}
+
+
 
 		&__check {
 			margin:0 0 60px 60px;
@@ -86,6 +113,10 @@ form {
 		text-align: center;
 		padding: 50px 20px;
 		
+		label { 
+			margin-bottom: 25px;
+		}
+
 		&__head {
 			margin-bottom: 45px; 
 		}
@@ -139,6 +170,22 @@ form {
 		 	content: url(img/checkbox-yes.png)
 		}
 
+		label:hover:after {
+			content: url(img/checkbox-no-hov.png)
+		}
+
+		label:active:after {
+			content: url(img/checkbox-no-act.png)
+		}
+
+		input:checked + label:hover:after {
+		 	content: url(img/checkbox-yes-hov.png)
+		}
+
+		input:checked + label:active:after {
+		 	content: url(img/checkbox-yes-act.png)
+		}
+
 		&__check {
 			margin:0 0 65px 80px;
 			
@@ -180,6 +227,7 @@ form {
 
 	.block-submit {
 		padding: 50px 20px;
+		text-align: center;
 
 		input {
 			padding: 20px 0;
@@ -211,4 +259,6 @@ form {
 			font-size: 14px;
 		}
 	}
+
+	
 }

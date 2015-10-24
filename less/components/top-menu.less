@@ -1,7 +1,5 @@
 .top-menu{	
 	position: absolute;
-	min-width: 320px;
-	max-width: 660px;
     width: 100%;
 	height: 66px;
 	background-color: rgba(11, 15, 19, 0.6);
@@ -10,7 +8,6 @@
 		float: left;
 		margin: 20px;
 		font-size: 24px;
-		font-family: 'Arial' sans-serif;
 		text-transform: uppercase;
 
 		a {
@@ -34,6 +31,47 @@
 		height: 30px;
 		background-image: url(img/gamb-menu.png);
 		background-repeat: no-repeat;
+		cursor: pointer;
+
+		&:hover {
+			background-image: url(img/gamb-menu-pink.png);
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 	}
 
 }
+
+
+@media(min-width: 600px){
+	.top-menu{
+		height: 110px;
+		
+		&__header {
+			margin:40px 110px;
+		}
+
+		&__header:before{
+			position: absolute;
+			left: 40px;
+			top: 30px;
+			content: url(img/glass-white.png);
+		}
+
+		&__header:hover:before {
+			content: url(img/glass-pink.png);
+		}
+
+		&__header:active:before {
+			opacity: 0.3;
+		}
+
+		&__btn-open-menu {
+			margin: 40px;
+		}
+	}
+}
+
+
