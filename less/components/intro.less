@@ -3,7 +3,6 @@
 	background: url(img/town.jpg) no-repeat 50% 50%;	
 	
 	&__text {
-		font-family: 'Times New Roman' , sans-serif;
 		font-size: 24px;
 		color: #fff;
 		position: absolute;
@@ -16,16 +15,35 @@
 	&__image {
 		height: 100%;
 	    width: 100%;
-	    top: -105px;
-	    width: 100%;
 	    background: url(img/iphone-in-hand.png) no-repeat 0% 100%;
 	    background-size: 255px 285px;
-	    z-index: 1;
 	}
 
 	form {
 		height: 230px;
-
 	}
+}
 
+@media(min-width: 600px){
+	.intro {
+		height: 730px;
+
+		&__text {
+			width: 200px;
+			font-size: 40px;
+			color: #fff;
+			position: absolute;
+			top: 150px;
+	    	left: 100px;
+			text-align: center;
+		}
+
+		&__image {
+			height: 107%;
+			position: absolute;
+		    top: 60px;
+		    left: 170px;
+		    background-size: 469px  546px;
+		}
+	}
 }
