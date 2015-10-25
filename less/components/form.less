@@ -1,0 +1,264 @@
+form {
+	
+	font-family: 'Open Sans' sans-serif;
+	
+	label {
+		display: block;
+		color: #d22856;
+		margin-left: 25px;
+		font-size: 14px;
+		text-transform: uppercase;
+	}	
+
+	input[type="text"] {
+		padding: 20px;
+		margin-bottom: 25px;
+		width: 87.5%;
+		min-width: 280px;
+		border: 2px solid #e5e5e5;
+		border-radius: 2px;
+		font-size: 18px;
+		outline: #d22856;
+
+		&:hover {
+			border-color: #283645;
+		}
+
+		&:active {
+			border-color: #d22856;
+		}
+	}
+
+	input + label {
+		display: inline-block;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	input[type="radio"]{
+		display: none;
+	}
+
+	.head {
+		padding: 55px 20px 0 20px;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	.block-name {
+		padding:  20px;
+
+		label {
+			margin-bottom: 15px;
+		}
+	
+	}
+
+	.block-application {
+		padding: 40px 0 5px 20px;
+		background-color: #f2f2f2;
+
+		&__head {
+			text-align: center;
+			margin-bottom: 40px; 
+		}
+
+		.os {
+			text-transform: none;
+			color: #283645;
+		}
+		
+		label:after {
+			position: absolute;
+			top: -10px;
+			left: -65px;
+			content: url(img/radio-no.png)
+		}
+		
+		label:hover:after {
+			content: url(img/radio-no-hov.png)
+		}
+
+		label:active:after {
+			content: url(img/radio-no-act.png)
+		}
+
+		input:checked + label:after {
+		 	content: url(img/radio-yes.png)
+		}
+
+		input:checked + label:hover:after {
+		 	content: url(img/radio-yes-hov.png)
+		}
+
+		input:checked + label:active:after {
+		 	content: url(img/radio-yes-act.png)
+		}
+
+
+
+		&__check {
+			margin:0 0 60px 60px;
+
+			label {
+				color: #283645;
+				text-transform: none;
+			}
+		}
+	}
+
+	.block-data {
+		text-align: center;
+		padding: 50px 20px;
+		
+		label { 
+			margin-bottom: 25px;
+		}
+
+		&__head {
+			margin-bottom: 45px; 
+		}
+
+	}
+
+	.block-companions {
+		background-color: #f2f2f2;
+		padding: 40px 20px 0 20px;
+
+		.number {
+			width: 20px;
+			min-width: 0;
+			float: left;
+			position: absolute;
+
+		}
+
+		.number-label {
+			float: left;
+			margin-right: 45px;
+		}
+
+
+		.name {
+			margin-left: 60px;
+		}
+
+		label {
+			margin-bottom: 15px;
+		}
+	}
+
+	.block-achievements{
+		padding-top: 55px;
+
+		&__head {
+			text-align: center;
+			margin-bottom: 40px; 
+
+		}
+
+		label:after {
+			position: absolute;
+			top: -10px;
+			left: -65px;
+			content: url(img/checkbox-no.png)
+		}
+
+		input:checked + label:after {
+		 	content: url(img/checkbox-yes.png)
+		}
+
+		label:hover:after {
+			content: url(img/checkbox-no-hov.png)
+		}
+
+		label:active:after {
+			content: url(img/checkbox-no-act.png)
+		}
+
+		input:checked + label:hover:after {
+		 	content: url(img/checkbox-yes-hov.png)
+		}
+
+		input:checked + label:active:after {
+		 	content: url(img/checkbox-yes-act.png)
+		}
+
+		&__check {
+			margin:0 0 65px 80px;
+			
+
+			label {
+				color: #283645;
+				text-transform: none;
+			}
+		}
+	}
+
+	.block-photos {
+		padding: 40px 20px;
+		background-color: #f2f2f2;
+
+		label {
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		&__add-photo-btn {
+			width: 87.5%;
+			margin-bottom: 30px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px 0;
+			border-color: #e6e6e6;
+			outline: none;
+			border-radius: 5px;
+			background-color: #FFF;
+		}
+
+		&__gallery {
+			border-top: 2px solid #e5e5e5;
+		}
+	}
+
+
+	.block-submit {
+		padding: 50px 20px;
+		text-align: center;
+
+		input {
+			padding: 20px 0;
+			width: 87.5%;
+			color: white;
+			background-color: #2AAB6D;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 5px;
+			border: none;
+			text-transform: uppercase;
+			margin-bottom: 45px;
+
+		}
+		
+		&__req-info {
+			margin: 0 15%;
+		}
+
+		&--red-star {
+			float: left;
+			color: #d22856;
+			width: 15px;
+		}
+
+		&--req-text {
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+	}
+
+	
+}

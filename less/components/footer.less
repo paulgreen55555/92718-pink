@@ -1,0 +1,91 @@
+.block-footer {
+	padding: 65px 0 45px 0;
+	color: #283645;
+	font-family: 'Open Sans' sans-serif;
+	
+	&__logo {
+		margin: 0 auto;
+		width: 145px; 
+		margin-bottom: 40px;
+	}
+
+	&__logo--img {
+		float: left;
+		width: 60px;
+		height: 40px;
+		background-image: url(img/glass-pink.png);
+	}
+
+	&__logo--name {
+		float: left;
+		font-size: 18pt;
+		margin-left: 10px;
+		line-height: 60px;
+		text-transform:  uppercase;
+		
+		&:hover {
+			color: #d22856;
+		}		
+	}
+
+	&__social {
+		width: 180px;
+		margin: 0 auto;
+
+		.social-item {
+			float: left;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			border: 2px solid #e9ebec;
+			margin-right: 15px;
+			cursor: pointer;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			
+			&:hover{
+				border-color: #283645;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+
+		.twit {
+				background-image: url(img/twit.png);
+		}
+
+		.face {
+				background-image: url(img/face.png);
+		}
+
+		.play {
+				background-image: url(img/play.png);
+		}		
+	}
+
+	&__stamp {
+		margin: 40px auto 45px;
+		width: 130px;
+
+		&--name {
+			width: 85px;
+			float: left;
+			margin-right: 15px; 
+			font-size: 14px;
+			line-height: 30px;
+		}
+
+		&--img {
+			float: left;
+			width: 28px;
+			height: 35px;
+			background: url(img/html.png) no-repeat 50%;
+		}
+	}
+}
